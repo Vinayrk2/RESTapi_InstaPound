@@ -1,0 +1,34 @@
+
+
+// get all user
+GET http://localhost:3000/user/
+
+###
+// get a user by id
+GET http://localhost:3000/user/1
+
+###
+// create a user
+POST http://localhost:3000/user/ 
+Content-Type: application/json 
+
+{
+    "name":"Vinay",
+    "email":"vinay@gmail.com",
+    "password":"Vinay@123.",
+    "username":"Vinay_12"
+}
+
+###
+// delete a user
+DELETE http://localhost:3000/user/17
+
+###
+// update a user
+PUT http://localhost:3000/user/17
+Content-Type: application/json
+
+{
+    "name":"Vinay Koshti",
+    "username":"Vinay_1"
+}

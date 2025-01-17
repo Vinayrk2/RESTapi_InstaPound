@@ -1,0 +1,25 @@
+###
+// get all the comments under the post
+GET http://localhost:3000/comment/2?page=1
+
+
+###
+// get all the comments by perticular user
+GET http://localhost:3000/comment/user/10?page=4
+
+
+###
+// remove a perticular comment
+DELETE http://localhost:3000/comment/7
+
+###
+// comment on the post
+POST http://localhost:3000/comment/2 
+Content-Type: application/json
+
+{
+    "message": "Nice Post",
+    "user_id": 10,
+    "post_id": 2
+}
+
